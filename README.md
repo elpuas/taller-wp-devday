@@ -5,7 +5,6 @@
 Antes de empezar, asegurémonos de que tu entorno local esté configurado correctamente y de que tengas las herramientas necesarias para trabajar con WordPress.
 
 ### Requisitos previos
-
 - Tener instalado:
 - WordPress Studio [Link](https://wordpress.org/gutenberg/studio) o Local [Link](https://localwp.com).
 - VS Code [descargar aquí](https://code.visualstudio.com).
@@ -15,7 +14,6 @@ Antes de empezar, asegurémonos de que tu entorno local esté configurado correc
 - [WordPress Hooks IntelliSense](https://marketplace.visualstudio.com/items?itemName=johnbillion.vscode-wordpress-hooks): Proporciona IntelliSense para hooks de WordPress.
 
 ### Instrucciones
-
 - Instala Local o accede a WordPress Studio:
 - Si usas Local, crea un nuevo sitio local y accede al panel de administración de WordPress.
 - Si prefieres WordPress Studio, abre este enlace y crea un entorno directamente en el navegador.
@@ -27,12 +25,12 @@ Antes de empezar, asegurémonos de que tu entorno local esté configurado correc
 
 Usaremos el plugin Create Block Theme para generar un tema en blanco y empezar a construir desde ahí.
 
-Requisitos previos
+### Requisitos previos
 - Instala los siguientes plugins en tu instalación de WordPress:
 1. [Performance Lab](https://wordpress.org/plugins/performance-lab/): Optimiza el rendimiento del sitio.
 2. [Create Block Theme](https://wordpress.org/plugins/create-block-theme/): Herramienta para generar Block Themes de forma rápida.
 
-Instrucciones
+### Instrucciones
 1. Instala y activa los plugins:
 - Ve a Plugins > Añadir nuevo en el panel de WordPress.
 - Busca e instala Performance Lab y Create Block Theme.
