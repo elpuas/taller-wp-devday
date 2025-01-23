@@ -57,3 +57,138 @@ El plugin generará los siguientes archivos y carpetas dentro del directorio de 
     └── footer.html
 ```
 Estos archivos serán la base para tu Block Theme.
+
+## 3. Configuración de theme.json
+
+El archivo theme.json permite definir los estilos globales de tu Block Theme, como colores, tipografías, tamaños de fuente, y más. Esto facilita mantener un [diseño](https://www.figma.com/design/cFa7bTCg6kaOJiVNeN9vVi/Mi-Primer-Tema?node-id=0-1&m=dev&t=RkAwFFc3yA208ADE-1) consistente en todo el tema.
+
+### Estructura Básica del Archivo
+
+El archivo `theme.json` debe estar en la raíz de tu tema. Una estructura básica se ve así:
+
+```
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"settings": {},
+	"styles": {}
+}
+```
+
+### Paso 1: Agregar la paleta de colores
+
+Basándonos en el diseño, agregamos los colores personalizados al archivo theme.json:
+
+```
+"settings": {
+	"color": {
+		"palette": [
+			{ "name": "Red", "slug": "red", "color": "#D63E4B" },
+			{ "name": "Dark Green", "slug": "dark-green", "color": "#4B595E" },
+			{ "name": "Teal", "slug": "teal", "color": "#96BDB4" },
+			{ "name": "Dark Gray", "slug": "dark-gray", "color": "#333333" },
+			{ "name": "White", "slug": "white", "color": "#FFFFFF" }
+		]
+	}
+}
+```
+Estos colores estarán disponibles en el editor de bloques.
+
+### Paso 2: Definir los tamaños de fuente
+
+Añadimos los tamaños de fuente mencionados en tu diseño:
+
+```
+"typography": {
+	"fontSizes": [
+		{ "name": "Small", "slug": "small", "size": "14px" },
+		{ "name": "Body", "slug": "body", "size": "18px" },
+		{ "name": "Medium", "slug": "medium", "size": "20px" },
+		{ "name": "Large", "slug": "large", "size": "24px" },
+		{ "name": "Extra Large", "slug": "extra-large", "size": "28px" },
+		{ "name": "Title", "slug": "title", "size": "40px" },
+		{ "name": "Hero", "slug": "hero", "size": "50px" }
+	]
+}
+```
+
+Paso 3: Configurar la fuente
+
+Para este diseño, usaremos Helvetica y Arial. Configuramos la tipografía en el archivo theme.json:
+
+```
+"typography": {
+	"fontFamilies": [
+		{
+			"fontFamily": "Helvetica, Arial, sans-serif",
+			"name": "Default Sans",
+			"slug": "default-sans"
+		}
+	]
+}
+```
+
+### Paso 4: Aplicar estilos globales
+
+Podemos aplicar estos colores, fuentes y tamaños a nivel global para garantizar consistencia en el tema:
+
+```
+"styles": {
+	"typography": {
+		"fontFamily": "var:preset|font-family|default-sans"
+	},
+	"color": {
+		"background": "var:preset|color|white",
+		"text": "var:preset|color|dark-gray"
+	}
+}
+```
+
+### Resultado Final
+
+Tu archivo theme.json completo debería lucir así:
+
+```
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"settings": {
+		"color": {
+			"palette": [
+				{ "name": "Red", "slug": "red", "color": "#D63E4B" },
+				{ "name": "Dark Green", "slug": "dark-green", "color": "#4B595E" },
+				{ "name": "Teal", "slug": "teal", "color": "#96BDB4" },
+				{ "name": "Dark Gray", "slug": "dark-gray", "color": "#333333" },
+				{ "name": "White", "slug": "white", "color": "#FFFFFF" }
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "Helvetica, Arial, sans-serif",
+					"name": "Default Sans",
+					"slug": "default-sans"
+				}
+			],
+			"fontSizes": [
+				{ "name": "Small", "slug": "small", "size": "14px" },
+				{ "name": "Body", "slug": "body", "size": "18px" },
+				{ "name": "Medium", "slug": "medium", "size": "20px" },
+				{ "name": "Large", "slug": "large", "size": "24px" },
+				{ "name": "Extra Large", "slug": "extra-large", "size": "28px" },
+				{ "name": "Title", "slug": "title", "size": "40px" },
+				{ "name": "Hero", "slug": "hero", "size": "50px" }
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|default-sans"
+		},
+		"color": {
+			"background": "var:preset|color|white",
+			"text": "var:preset|color|dark-gray"
+		}
+	}
+}
+```
