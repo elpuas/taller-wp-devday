@@ -112,7 +112,7 @@ Añadimos los tamaños de fuente mencionados en tu diseño:
 }
 ```
 
-Paso 3: Configurar la fuente
+### Paso 3: Configurar la fuente
 
 Para este diseño, usaremos Helvetica y Arial. Configuramos la tipografía en el archivo theme.json:
 
