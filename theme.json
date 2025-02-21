@@ -6,6 +6,20 @@
 			"contentSize": "620px",
 			"wideSize": "1000px"
 		},
+		"color": {
+			"palette": [
+				{
+					"color": "#f0f0f0",
+					"name": "Light Gray",
+					"slug": "light-gray"
+				},
+				{
+					"color": "#333",
+					"name": "Dark Gray",
+					"slug": "dark-gray"
+				}
+			]
+		},
 		"spacing": {
 			"units": [ "%", "px", "em", "rem", "vh", "vw" ]
 		},
