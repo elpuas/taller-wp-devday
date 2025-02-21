@@ -269,6 +269,8 @@ Los archivos de las funciones son los siguientes:
 [WordPress Scripts](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/)
 Este paquete ofrece una interfaz de línea de comandos y expone un binario llamado wp-scripts, por lo que puedes ejecutarlo directamente con npx, un ejecutor de paquetes de npm. Sin embargo, este módulo está diseñado para configurarse a través de la sección scripts en el archivo package.json de tu proyecto. Este ejemplo completo demuestra la mayoría de las capacidades incluidas.
 
+Instalar el paquete ( ver los requirimientos de Node )
+
 ```bash
 npm install @wordpress/scripts --save-dev
 ```
