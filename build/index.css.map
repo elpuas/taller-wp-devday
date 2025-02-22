@@ -1,0 +1,1 @@
+{"version":3,"file":"index.css","mappings":";;;AAAA;IACI,eAAe;IACf,YAAY;AAChB,C","sources":["webpack:///./src/css/index.css"],"sourcesContent":["header {\n    position: fixed;\n    z-index: 100;\n}"],"names":[],"sourceRoot":""}
