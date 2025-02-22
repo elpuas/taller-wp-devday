@@ -34,6 +34,7 @@ wp-config.php
 
 # htaccess
 /.htaccess
+node_modules
 
 # All plugins
 #

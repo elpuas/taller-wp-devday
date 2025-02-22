@@ -3,8 +3,11 @@
 	"settings": {
 		"appearanceTools": true,
 		"layout": {
-			"contentSize": "620px",
-			"wideSize": "1000px"
+			"contentSize": "1120px",
+			"wideSize": "1240px"
+		},
+		"position": {
+			"sticky": true
 		},
 		"color": {
 			"palette": [
@@ -17,6 +20,21 @@
 					"color": "#333",
 					"name": "Dark Gray",
 					"slug": "dark-gray"
+				},
+				{
+					"color": "#D63E4B",
+					"name": "Crimson",
+					"slug": "crimson"
+				},
+				{
+					"color": "#48655E",
+					"name": "Forest",
+					"slug": "forest"
+				},
+				{
+					"color": "#59BDB4",
+					"name": "Turquoise",
+					"slug": "turquoise"
 				}
 			]
 		},
@@ -30,6 +48,15 @@
 					"name": "System Font",
 					"slug": "system-font"
 				}
+			],
+			"fontSizes": [
+				{ "name": "Small", "slug": "small", "size": "14px" },
+				{ "name": "Body", "slug": "body", "size": "18px" },
+				{ "name": "Medium", "slug": "medium", "size": "20px" },
+				{ "name": "Large", "slug": "large", "size": "24px" },
+				{ "name": "Extra Large", "slug": "extra-large", "size": "28px" },
+				{ "name": "Title", "slug": "title", "size": "40px" },
+				{ "name": "Hero", "slug": "hero", "size": "50px" }
 			]
 		},
 		"useRootPaddingAwareAlignments": true
@@ -42,7 +69,22 @@
 		{
 			"area": "footer",
 			"name": "footer"
+		},
+		{
+			"area": "hero",
+			"name": "hero",
+			"title": "Hero"
 		}
+	],
+	"customTemplates": [
+		{
+			"title": "Page No Title",
+			"postTypes": [ "page" ],
+			"name": "page-no-title"
+		}
+	],
+	"patterns": [
+		"wpdevday/test-pattern"
 	],
 	"version": 3
 }
